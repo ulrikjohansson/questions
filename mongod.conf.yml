@@ -1,0 +1,5 @@
+systemLog:
+  verbosity: 5
+  component:
+    storage:
+      verbosity: 0
