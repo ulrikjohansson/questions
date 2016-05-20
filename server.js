@@ -31,7 +31,7 @@ server.listen({'port': 3000}, () => {
 function createResponse(req, res) {
   var req_url = url.parse(req.url, true);
   
-  res.setHeader('Content-Type', 'application/javascript');
+  res.setHeader('Content-Type', 'application/javascript; charset=utf-8');
   res.statusCode = 200;
 
   if (req_url['pathname'] == "/add") {
