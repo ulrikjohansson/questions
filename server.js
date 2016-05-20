@@ -36,7 +36,9 @@ function createResponse(req, res) {
 
   if (req_url['pathname'] == "/add") {
     addQuestion(req_url['query']).then(function(response) {
-      res.write(response);
+      // done
+    }).catch(function(e) {
+      res.write("Error saving data!\n");
     });
   }
   viewQuestions().then(function(response) {
